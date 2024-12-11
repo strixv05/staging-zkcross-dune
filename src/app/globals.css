@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+    }
+}
+
+.container {
+    @apply max-w-[1440px] mx-auto 2xl:px-[8%] md:px-[4%] px-4;
+}
