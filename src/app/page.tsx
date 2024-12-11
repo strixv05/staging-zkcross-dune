@@ -25,36 +25,42 @@ const Dashboard = () => {
             value: statsData?.totalVolume ? `${formatCommaStd(statsData?.totalVolume)} USD` : "130,728,591 USD",
             subtitle: "Volume",
             lastUpdated: statsData?.date ? getRelativeTime(statsData?.date) : "1d",
+            isLastActive: true,
         },
         {
             title: "Transactions",
             value: statsData?.totalTxn ? `${formatCommaStd(statsData?.totalTxn)}` : "236,310",
             subtitle: "Transactions",
             lastUpdated: statsData?.date ? getRelativeTime(statsData?.date) : "1d",
+            isLastActive: true,
         },
         {
             title: "Unique Active Wallets",
             value: statsData?.totalUser ? `${formatCommaStd(statsData?.totalUser)}` : "39,908",
             subtitle: "Unique Active Wallets",
             lastUpdated: statsData?.date ? getRelativeTime(statsData?.date) : "1d",
+            isLastActive: true,
         },
         {
             title: "Tokens Transferred",
-            value: "22,994,324,358",
+            value: "-- --- --- ---",
             subtitle: "Tokens Transferred",
-            lastUpdated: "2mon",
+            lastUpdated: "--",
+            isLastActive: false,
         },
         {
             title: "Revenue",
-            value: "$259,521",
+            value: "$--- ---",
             subtitle: "Revenue",
-            lastUpdated: "1mon",
+            lastUpdated: "--",
+            isLastActive: false,
         },
         {
             title: "Grants",
             value: "$650,000",
             subtitle: "Grants",
-            lastUpdated: "1d",
+            lastUpdated: "11d",
+            isLastActive: true,
         },
     ];
 
@@ -70,7 +76,7 @@ const Dashboard = () => {
             {/* Metrics Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-5">
                 {metrics.map((metric, index) => (
-                    <MetricCard key={index} title={metric.title} value={metric.value} subtitle={metric.subtitle} lastUpdated={metric.lastUpdated} />
+                    <MetricCard key={index} title={metric.title} value={metric.value} subtitle={metric.subtitle} lastUpdated={metric.lastUpdated} isLastActive={metric.isLastActive} />
                 ))}
             </div>
 
