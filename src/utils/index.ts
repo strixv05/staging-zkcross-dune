@@ -87,12 +87,12 @@ export function getRelativeTime(date: string | Date) {
 
     if (diffInMonths > 0) {
         return `${diffInMonths}mon`; // If it's more than a month ago, show months
-    } else if (diffInDays < 1) {
-        return `${diffInMinutes}m`; // Less than a day ago, show minutes
+    } else if (diffInDays > 0) {
+        return `${diffInDays}d`;
     } else if (diffInHours < 24) {
         return `${diffInHours}h`;
     } else {
-        return `${diffInDays}d`;
+        return `${diffInMinutes}min`; // Less than a day ago, show minutes
     }
 }
 

@@ -10,14 +10,15 @@ import { useQuery } from "@tanstack/react-query";
 const Dashboard = () => {
     const { isPending, error, data } = useQuery({
         queryKey: ["duneDetailStats"],
-        queryFn: () => Promise.all([fetch("https://api.zkcross.network/api/v1/stats/stats").then((res) => res.json()), fetch("https://api.zkcross.network/api/v1/stats/graphs").then((res) => res.json())]),
+        queryFn: () => Promise.all(
+            [fetch("https://api.zkcross.network/api/v1/stats/stats").then((res) => res.json()), fetch("https://api.zkcross.network/api/v1/stats/graphs").then((res) => res.json())]),
         staleTime: 60 * 1000,
     });
 
     const statsData = data?.[0]?.stats;
     const graphData = data?.[1]?.data;
 
-    console.log("stats data", statsData, graphData);
+    // console.log("stats data", statsData, graphData);
 
     const metrics = [
         {
@@ -43,23 +44,23 @@ const Dashboard = () => {
         },
         {
             title: "Tokens Transferred",
-            value: "-- --- --- ---",
+            value: statsData?.totalTokens ? `${formatCommaStd(statsData?.totalTokens)}` : "-- --- --- ---",
             subtitle: "Tokens Transferred",
-            lastUpdated: "--",
-            isLastActive: false,
+            lastUpdated: statsData?.date && statsData?.totalTokens ? getRelativeTime(statsData?.date) : "--",
+            isLastActive: statsData?.totalTokens ? true : false,
         },
         {
             title: "Revenue",
-            value: "$--- ---",
+            value: statsData?.totalRevenue ? `$${formatCommaStd(statsData?.totalRevenue)}` : "$--- ---",
             subtitle: "Revenue",
-            lastUpdated: "--",
-            isLastActive: false,
+            lastUpdated: statsData?.date && statsData?.totalRevenue ? getRelativeTime(statsData?.date) : "--",
+            isLastActive: statsData?.totalRevenue ? true : false,
         },
         {
             title: "Grants",
             value: "$650,000",
             subtitle: "Grants",
-            lastUpdated: "11d",
+            lastUpdated: getRelativeTime("2024-10-15T00:00:00.002Z"), //2025-01-18T00:00:00.002Z
             isLastActive: true,
         },
     ];
