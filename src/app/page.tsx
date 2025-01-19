@@ -83,6 +83,7 @@ const Dashboard = () => {
 
             <div className="mt-6 flex flex-col gap-4">
                 <VolumeChart label="Transactions" data={graphData?.map((i: any) => ({ volume: i?.cumulativeTxnCount, date: formattedDateMonth(i?.month, i?.year) }))} date={statsData?.date} />
+                <VolumeChart label="Total Revenue" data={graphData?.map((i: any) => ({ volume: i?.cumulativeRevenue, date: formattedDateMonth(i?.month, i?.year) }))} date={statsData?.date} />
                 <VolumeChart label="Unique Active Wallets" data={graphData?.map((i: any) => ({ volume: i?.cumulativeUserCount, date: formattedDateMonth(i?.month, i?.year) }))} date={statsData?.date} />
                 <VolumeChart label="Volume" data={graphData?.map((i: any) => ({ volume: i?.cumulativeVolume, date: formattedDateMonth(i?.month, i?.year) }))} date={statsData?.date} />
             </div>
