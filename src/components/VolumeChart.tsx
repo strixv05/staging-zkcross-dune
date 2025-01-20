@@ -6,7 +6,7 @@ import Link from "next/link";
 import { getRelativeTime } from "@/utils";
 import { CircleCheckBig } from "lucide-react";
 
-const VolumeChart = ({ label, data, date }: { label: string; data: any[]; date: string }) => {
+const VolumeChart = ({ label, data, date, hoverLabel }: { label: string; data: any[]; date: string, hoverLabel:string }) => {
     // const data = [
     //     { date: "Apr 2022", volume: 5 },
     //     { date: "Apr 29 2022", volume: 5.5 },
@@ -60,7 +60,7 @@ const VolumeChart = ({ label, data, date }: { label: string; data: any[]; date: 
                             /> */}
                             <CartesianGrid strokeWidth={1} stroke="#eeeeee18" vertical={false} />
                             <Tooltip
-                                formatter={(value) => [(Number(value).toFixed(2)), "Volume"]}
+                                formatter={(value) => [(Number(value).toFixed(2)), hoverLabel]}
                                 itemStyle={{ color: "#818cf8" }}
                                 labelStyle={{ color: "#eeeeee" }}
                                 contentStyle={{
