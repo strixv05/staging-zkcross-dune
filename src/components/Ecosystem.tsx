@@ -115,7 +115,7 @@ const blockchains = [
                     <a
                         className="flex gap-2 items-center hover:text-gray-300 transition-all"
                         href="https://browser.partisiablockchain.com/contracts/027a0073c08310ea9a7d4e2bc8087bfac1d32a789b?tab=transactions"
-                        target="_self"
+                        target="_target"
                         rel="noopener noreferrer"
                     >
                         Partisia - Create pool
@@ -126,7 +126,7 @@ const blockchains = [
                     <a
                         className="flex gap-2 items-center hover:text-gray-300 transition-all"
                         href="https://browser.partisiablockchain.com/contracts/02d49eeeebbf51706a66e6b54de87f7af1100bfd0c?tab=transactions"
-                        target="_self"
+                        target="_target"
                         rel="noopener noreferrer"
                     >
                         Partisia on-chain swap - Liquidity pool
@@ -237,7 +237,7 @@ const blockchains = [
                     <a
                         className="flex gap-2 items-center hover:text-gray-300 transition-all"
                         href="https://lab.stellar.org/endpoints/liquidity-pools?$=network$id=testnet&label=Testnet&horizonUrl=https:////horizon-testnet.stellar.org&rpcUrl=https:////soroban-testnet.stellar.org&passphrase=Test%20SDF%20Network%20/;%20September%202015;;"
-                        target="_self"
+                        target="_target"
                         rel="noopener noreferrer"
                     >
                         Stellar on-chain - (Stellar Liquidity pools)
