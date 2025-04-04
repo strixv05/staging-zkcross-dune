@@ -112,8 +112,24 @@ const blockchains = [
                     </a>
                 </li>
                 <li className="text-sm text-gray-400 flex justify-center">
-                    <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="#" target="_self" rel="noopener noreferrer">
-                        Partisia on-chain - Liquidity pools
+                    <a
+                        className="flex gap-2 items-center hover:text-gray-300 transition-all"
+                        href="https://browser.partisiablockchain.com/contracts/027a0073c08310ea9a7d4e2bc8087bfac1d32a789b?tab=transactions"
+                        target="_self"
+                        rel="noopener noreferrer"
+                    >
+                        Partisia - Create pool
+                        <SquareArrowOutUpRight className="size-3" />
+                    </a>
+                </li>
+                <li className="text-sm text-gray-400 flex justify-center">
+                    <a
+                        className="flex gap-2 items-center hover:text-gray-300 transition-all"
+                        href="https://browser.partisiablockchain.com/contracts/02d49eeeebbf51706a66e6b54de87f7af1100bfd0c?tab=transactions"
+                        target="_self"
+                        rel="noopener noreferrer"
+                    >
+                        Partisia on-chain swap - Liquidity pool
                         <SquareArrowOutUpRight className="size-3" />
                     </a>
                 </li>
@@ -218,7 +234,12 @@ const blockchains = [
                     </a>
                 </li>
                 <li className="text-sm text-gray-400 flex justify-center">
-                    <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="#" target="_self" rel="noopener noreferrer">
+                    <a
+                        className="flex gap-2 items-center hover:text-gray-300 transition-all"
+                        href="https://lab.stellar.org/endpoints/liquidity-pools?$=network$id=testnet&label=Testnet&horizonUrl=https:////horizon-testnet.stellar.org&rpcUrl=https:////soroban-testnet.stellar.org&passphrase=Test%20SDF%20Network%20/;%20September%202015;;"
+                        target="_self"
+                        rel="noopener noreferrer"
+                    >
                         Stellar on-chain - (Stellar Liquidity pools)
                         <SquareArrowOutUpRight className="size-3" />
                     </a>
