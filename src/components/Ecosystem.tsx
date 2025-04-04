@@ -11,8 +11,8 @@ const blockchains = [
         content: (
             <ul className="flex flex-col gap-1">
                 <li className="text-sm text-gray-400 flex justify-center">
-                    <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://spliterlands.zkcross.exchange" target="_blank" rel="noopener noreferrer">
-                        https://spliterlands.zkcross.exchange
+                    <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://splinterlands.zkcross.exchange" target="_blank" rel="noopener noreferrer">
+                        https://splinterlands.zkcross.exchange
                         <SquareArrowOutUpRight className="size-3" />
                     </a>
                 </li>
