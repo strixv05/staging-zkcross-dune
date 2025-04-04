@@ -66,7 +66,7 @@ export function SpotLightItem({ children, className }: SpotlightItemProps) {
 
     const [overlayColor, setOverlayColor] = useState({ x: 0, y: 0 });
     const handleMouseMove = ({ currentTarget, clientX, clientY }: MouseEvent) => {
-        let { left, top } = currentTarget.getBoundingClientRect();
+        const { left, top } = currentTarget.getBoundingClientRect();
 
         const x = clientX - left;
         const y = clientY - top;

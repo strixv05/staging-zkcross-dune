@@ -6,7 +6,7 @@ import { CircleCheckBig } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { SpotLightItem } from "./ui/spotlight";
 
-const MetricCard = ({ title, value, subtitle, lastUpdated = "4h", isLastActive = false, extraValue }: { title: string; value: any; subtitle: string; lastUpdated?: string; isLastActive?: boolean; extraValue?: any }) => {
+const MetricCard = ({ title, value, subtitle, lastUpdated = "4h", isLastActive = false }: { title: string; value: any; subtitle: string; lastUpdated?: string; isLastActive?: boolean; extraValue?: any }) => {
     if (title === "Grants") {
         return null;
     }
