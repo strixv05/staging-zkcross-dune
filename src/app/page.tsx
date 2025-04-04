@@ -36,7 +36,7 @@ const Dashboard = () => {
             <MetricsGrid statsData={statsData} />
 
             {/* Graph Sections */}
-            <div className="mt-10 flex flex-col gap-6">
+            <div className="mt-6 flex flex-col gap-6">
                 <GraphSection
                     label="Transactions"
                     apiEndpoint="/api/v1/stats/transactions/graph"
