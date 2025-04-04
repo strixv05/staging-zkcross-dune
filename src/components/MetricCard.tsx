@@ -13,12 +13,12 @@ const MetricCard = ({ title, value, subtitle, lastUpdated = "4h", isLastActive =
     return (
         <SpotLightItem>
             <Card className={cn("relative overflow-hidden p-3 border rounded-lg group")}>
-                <div className="flex justify-between items-start mb-12">
+                <div className="flex justify-between items-start mb-9">
                     <span className="text-sm text-gray-400">{title}</span>
                 </div>
                 <div className="text-3xl text-indigo-400 mb-1 text-center">{value}</div>
                 <div className="text-sm text-indigo-400 text-center">{subtitle}</div>
-                <div className="flex items-center justify-between mt-12 text-xs text-gray-500">
+                <div className="flex items-center justify-between mt-9 text-xs text-gray-500">
                     <Link href="https://zkcross.network/" rel="noopener noreferrer" target="_blank">
                         @zkcross_network
                     </Link>
