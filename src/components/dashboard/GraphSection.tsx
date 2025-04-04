@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 interface GraphSectionProps {
     label: string;
     apiEndpoint: string; // e.g. "/api/v1/stats/transactions/graph"
-    dataMapping: (item: any) => { volume: number; date: string };
+    dataMapping: (item: any, timeframe: any) => { volume: number; date: string };
     hoverLabel: string;
     statsDate?: string;
 }
@@ -24,7 +24,7 @@ const GraphSection = ({ label, apiEndpoint, dataMapping, hoverLabel, statsDate }
 
     if (error) return <div className="text-red-500">Error loading {label}</div>;
 
-    const chartData = data?.data?.map(dataMapping) || [];
+    const chartData = data?.data?.map((e: any) => dataMapping(e, timeframe)) || [];
 
     return (
         <div>

@@ -9,6 +9,10 @@ import GraphSection from "@/components/dashboard/GraphSection";
 import { formattedDateMonth } from "@/utils";
 import Ecosystem from "@/components/Ecosystem";
 
+const formateDateString = (i: any, tf: any) => {
+    return formattedDateMonth(i?.month, i?.year, ["3m", "6m"].includes(tf) ? i?.day : undefined);
+};
+
 const Dashboard = () => {
     // Fetch overall stats
     const { isPending, error, data } = useQuery({
@@ -40,9 +44,9 @@ const Dashboard = () => {
                 <GraphSection
                     label="Transactions"
                     apiEndpoint="/api/v1/stats/transactions/graph"
-                    dataMapping={(i: any) => ({
+                    dataMapping={(i: any, tf: any) => ({
                         volume: i?.cumulativeTxnCount,
-                        date: formattedDateMonth(i?.month, i?.year),
+                        date: formateDateString(i, tf),
                     })}
                     hoverLabel="Transactions"
                     statsDate={statsData?.date}
@@ -50,9 +54,9 @@ const Dashboard = () => {
                 <GraphSection
                     label="Total Revenue"
                     apiEndpoint="/api/v1/stats/revenue/graph"
-                    dataMapping={(i: any) => ({
+                    dataMapping={(i: any, tf: any) => ({
                         volume: i?.cumulativeRevenue,
-                        date: formattedDateMonth(i?.month, i?.year),
+                        date: formateDateString(i, tf),
                     })}
                     hoverLabel="Revenue"
                     statsDate={statsData?.date}
@@ -60,9 +64,9 @@ const Dashboard = () => {
                 <GraphSection
                     label="Unique Active Wallets"
                     apiEndpoint="/api/v1/stats/user/graph"
-                    dataMapping={(i: any) => ({
+                    dataMapping={(i: any, tf: any) => ({
                         volume: i?.cumulativeUserCount,
-                        date: formattedDateMonth(i?.month, i?.year),
+                        date: formateDateString(i, tf),
                     })}
                     hoverLabel="User Count"
                     statsDate={statsData?.date}
@@ -70,9 +74,9 @@ const Dashboard = () => {
                 <GraphSection
                     label="Volume"
                     apiEndpoint="/api/v1/stats/volume/graph"
-                    dataMapping={(i: any) => ({
+                    dataMapping={(i: any, tf: any) => ({
                         volume: i?.cumulativeVolume,
-                        date: formattedDateMonth(i?.month, i?.year),
+                        date: formateDateString(i, tf),
                     })}
                     hoverLabel="Volume"
                     statsDate={statsData?.date}

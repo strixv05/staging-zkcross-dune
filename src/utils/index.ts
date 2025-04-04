@@ -108,9 +108,9 @@ export function getRelativeTime(date: string | Date) {
     }
 }
 
-export function formattedDateMonth(month: number, year: number) {
+export function formattedDateMonth(month: number, year: number, day?: string) {
     // Create a date object to format the month name
     const date = new Date(year, month - 1); // month is zero-based in JS
     const monthName = date.toLocaleString("en-US", { month: "short" }); // Get short month name (e.g., "Apr")
-    return `${monthName} ${year}`;
+    return `${day ? `${day} ` : ""}${monthName} ${year}`;
 }
