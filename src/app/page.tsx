@@ -10,7 +10,7 @@ import { formattedDateMonth } from "@/utils";
 import Ecosystem from "@/components/Ecosystem";
 
 const formateDateString = (i: any, tf: any) => {
-    return formattedDateMonth(i?.month, i?.year, ["3m", "6m"].includes(tf) ? i?.day : undefined);
+    return formattedDateMonth(i?.month, i?.year, tf === "3m" ? i?.day : undefined, tf === "6m" ? `Wk${i?.weekOfMonth}` : undefined);
 };
 
 const Dashboard = () => {
