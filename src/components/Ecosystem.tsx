@@ -70,24 +70,26 @@ const blockchains = [
                     </a>
                 </li> */}
                 <li className="text-sm font-semibold text-gray-400 mt-3">Bridge Infra</li>
-                <li className="text-sm text-gray-400 flex justify-center">
-                    <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0x03aC0cBa06b16eC79A4a5ea5949e47aE6C53ECd2" target="_blank" rel="noopener noreferrer">
-                        ETH
-                        <SquareArrowOutUpRight className="size-3" />
-                    </a>
-                </li>
-                <li className="text-sm text-gray-400 flex justify-center">
-                    <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://polygonscan.com/address/0x03aC0cBa06b16eC79A4a5ea5949e47aE6C53ECd2" target="_blank" rel="noopener noreferrer">
-                        Polygon
-                        <SquareArrowOutUpRight className="size-3" />
-                    </a>
-                </li>
-                <li className="text-sm text-gray-400 flex justify-center">
-                    <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://tzkt.io/KT1ENtxQpJzr7MA3CqCNyEink6UT9Yd1f3jg/operations" target="_blank" rel="noopener noreferrer">
-                        Tezos
-                        <SquareArrowOutUpRight className="size-3" />
-                    </a>
-                </li>
+                <ul className="grid grid-cols-3 [&>li]:px-2 [&>li]:border [&>li]:border-zinc-800 [&>li]:rounded">
+                    <li className="text-sm text-gray-400 flex justify-center">
+                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0x03aC0cBa06b16eC79A4a5ea5949e47aE6C53ECd2" target="_blank" rel="noopener noreferrer">
+                            ETH
+                            <SquareArrowOutUpRight className="size-3" />
+                        </a>
+                    </li>
+                    <li className="text-sm text-gray-400 flex justify-center">
+                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://polygonscan.com/address/0x03aC0cBa06b16eC79A4a5ea5949e47aE6C53ECd2" target="_blank" rel="noopener noreferrer">
+                            Polygon
+                            <SquareArrowOutUpRight className="size-3" />
+                        </a>
+                    </li>
+                    <li className="text-sm text-gray-400 flex justify-center">
+                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://tzkt.io/KT1ENtxQpJzr7MA3CqCNyEink6UT9Yd1f3jg/operations" target="_blank" rel="noopener noreferrer">
+                            Tezos
+                            <SquareArrowOutUpRight className="size-3" />
+                        </a>
+                    </li>
+                </ul>
             </ul>
         ),
     },
@@ -353,7 +355,7 @@ function Ecosystem() {
                             "flex flex-col gap-3 items-center justify-start text-center px-4 w-full py-12 text-xl filter hover:brightness-110 transition-all duration-200 ease-in-out"
                         )}
                     >
-                        <div className="flex gap-3">
+                        <div className="flex gap-3 items-center justify-center mb-2">
                             <img src={item?.logo} alt={item?.name} className={cn("w-8 h-8", item?.isInvert && "filter invert")} />
                             <p>{item?.name}</p>
                         </div>
