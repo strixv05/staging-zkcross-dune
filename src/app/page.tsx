@@ -30,7 +30,7 @@ const Dashboard = () => {
     return (
         <div className="w-full container mx-auto py-4">
             {/* Header Banner */}
-            <div className="w-full h-40 rounded-lg mb-6 mt-2 flex items-center justify-center bg-[url(https://gfa.nyc3.digitaloceanspaces.com/testapp/testdir/Banner-Dune.png)] bg-center bg-cover bg-no-repeat"></div>
+            <div className="w-full lg:h-40 md:h-32 h-24 rounded-lg mb-6 mt-2 flex items-center justify-center bg-[url(https://gfa.nyc3.digitaloceanspaces.com/testapp/testdir/Banner-Dune.png)] bg-center bg-cover bg-no-repeat"></div>
 
             {/* Metrics Section */}
             <MetricsGrid statsData={statsData} />

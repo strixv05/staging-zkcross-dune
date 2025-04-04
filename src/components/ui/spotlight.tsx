@@ -42,7 +42,7 @@ export const Spotlight = ({ children, className, ProximitySpotlight = true, Hove
                 CursorFlowGradient,
             }}
         >
-            <div className={cn(className, "group relative z-10 rounded-md  grid grid-cols-4 gap-2 ")}>{children}</div>
+            <div className={cn(className, "group relative z-10 rounded-md grid gap-2 ")}>{children}</div>
         </SpotLightContext.Provider>
     );
 };
