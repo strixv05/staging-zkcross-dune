@@ -59,7 +59,7 @@ const blockchains = [
         ),
     },
     {
-        name: "Tezos zkCrossDEX",
+        name: "Tezos",
         logo: "https://cryptologos.cc/logos/tezos-xtz-logo.png?v=040",
         content: (
             <ul className="flex flex-col gap-1">
