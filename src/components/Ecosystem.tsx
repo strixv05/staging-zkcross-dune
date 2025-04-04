@@ -181,31 +181,31 @@ const blockchains = [
                         </a>
                     </li>
                     <li className="text-sm text-gray-400 flex justify-center">
-                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0xF393D008077c97F2632FA04a910969aC58f88E3C" target="_blank" rel="noopener noreferrer">
+                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0x74C0a1946d10FaF9048E9AC59D1401Bbbfc54cA4" target="_blank" rel="noopener noreferrer">
                             ETH USDT
                             <SquareArrowOutUpRight className="size-3" />
                         </a>
                     </li>
                     <li className="text-sm text-gray-400 flex justify-center">
-                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0xF393D008077c97F2632FA04a910969aC58f88E3C" target="_blank" rel="noopener noreferrer">
+                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0xe98670C2cBAfB2205BC99eBE33093233F7f07CC1" target="_blank" rel="noopener noreferrer">
                             POL
                             <SquareArrowOutUpRight className="size-3" />
                         </a>
                     </li>
                     <li className="text-sm text-gray-400 flex justify-center">
-                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0xF393D008077c97F2632FA04a910969aC58f88E3C" target="_blank" rel="noopener noreferrer">
+                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0x4c4ECb1EFb3BC2a065af1F714B60980a6562C26f" target="_blank" rel="noopener noreferrer">
                             POL USDC
                             <SquareArrowOutUpRight className="size-3" />
                         </a>
                     </li>
                     <li className="text-sm text-gray-400 flex justify-center">
-                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0xF393D008077c97F2632FA04a910969aC58f88E3C" target="_blank" rel="noopener noreferrer">
+                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0x05Ee4Eee70452dD555Ecc3f997ea03C6fba29AC1" target="_blank" rel="noopener noreferrer">
                             BNB
                             <SquareArrowOutUpRight className="size-3" />
                         </a>
                     </li>
                     <li className="text-sm text-gray-400 flex justify-center">
-                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0xF393D008077c97F2632FA04a910969aC58f88E3C" target="_blank" rel="noopener noreferrer">
+                        <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0x36a0e44c73e5a6a7727817377c0127f320a9456e" target="_blank" rel="noopener noreferrer">
                             WMPC
                             <SquareArrowOutUpRight className="size-3" />
                         </a>
