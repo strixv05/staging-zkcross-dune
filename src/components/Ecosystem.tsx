@@ -134,7 +134,7 @@ const blockchains = [
                         <SquareArrowOutUpRight className="size-3" />
                     </a>
                 </li>
-                <li className="text-sm text-gray-400 mt-3">EVM Lock to Partisia</li>
+                <li className="text-sm text-gray-400 mt-3">EVM Lock to Partisia Deposit</li>
                 <ul className="grid grid-cols-3 [&>li]:px-2 [&>li]:border [&>li]:border-zinc-800 [&>li]:rounded">
                     <li className="text-sm text-gray-400 flex justify-center">
                         <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href={getExplorerUrl("0x80705283D1E2CaA3fB126f1262aeC6C260C7c205", "ETH")} target="_blank" rel="noopener noreferrer">
@@ -155,7 +155,7 @@ const blockchains = [
                         </a>
                     </li>
                 </ul>
-                <li className="text-sm text-gray-400 mt-3">Partisia to EVM Lock</li>
+                <li className="text-sm text-gray-400 mt-3">Partisia Lock to EVM</li>
                 <ul className="grid grid-cols-3 [&>li]:px-2 [&>li]:border [&>li]:border-zinc-800 [&>li]:rounded">
                     <li className="text-sm text-gray-400 flex justify-center">
                         <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href={getExplorerUrl("043b1822925da011657f9ab3d6ff02cf1e0bfe0146", "PARTI")} target="_blank" rel="noopener noreferrer">
@@ -194,7 +194,7 @@ const blockchains = [
                         </a>
                     </li> */}
                 </ul>
-                <li className="text-sm text-gray-400 mt-3">Partisia to EVM Release</li>
+                <li className="text-sm text-gray-400 mt-3">Partisia to EVM Withdraw</li>
                 <ul className="grid grid-cols-3 [&>li]:px-2 [&>li]:border [&>li]:border-zinc-800 [&>li]:rounded">
                     <li className="text-sm text-gray-400 flex justify-center">
                         <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href={getExplorerUrl("0xF393D008077c97F2632FA04a910969aC58f88E3C", "ETH")} target="_blank" rel="noopener noreferrer">
