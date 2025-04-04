@@ -327,7 +327,7 @@ const blockchains = [
                 </li>
                 <li className="text-sm font-semibold text-gray-400 mt-3">Bridge Infra</li>
                 <li className="text-sm text-gray-400 flex justify-center">
-                    <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0x21568459854Adcda462F6D9C11ce4F157Dc70f93" target="_blank" rel="noopener noreferrer">
+                    <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href={getExplorerUrl("0x21568459854Adcda462F6D9C11ce4F157Dc70f93", "ARB")} target="_blank" rel="noopener noreferrer">
                         Arbitrum on-chain and lock
                         <SquareArrowOutUpRight className="size-3" />
                     </a>
