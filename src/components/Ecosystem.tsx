@@ -133,7 +133,7 @@ const blockchains = [
                         <SquareArrowOutUpRight className="size-3" />
                     </a>
                 </li>
-                <li className="text-sm text-gray-400 mt-3">Partisia Lock Oracle</li>
+                <li className="text-sm text-gray-400 mt-3">Partisia to EVM Lock</li>
                 <ul className="grid grid-cols-3 [&>li]:px-2 [&>li]:border [&>li]:border-zinc-800 [&>li]:rounded">
                     <li className="text-sm text-gray-400 flex justify-center">
                         <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://browser.partisiablockchain.com/contracts/043b1822925da011657f9ab3d6ff02cf1e0bfe0146" target="_blank" rel="noopener noreferrer">
@@ -172,7 +172,7 @@ const blockchains = [
                         </a>
                     </li>
                 </ul>
-                <li className="text-sm text-gray-400 mt-3">EVM Release</li>
+                <li className="text-sm text-gray-400 mt-3">Partisia to EVM Release</li>
                 <ul className="grid grid-cols-3 [&>li]:px-2 [&>li]:border [&>li]:border-zinc-800 [&>li]:rounded">
                     <li className="text-sm text-gray-400 flex justify-center">
                         <a className="flex gap-2 items-center hover:text-gray-300 transition-all" href="https://etherscan.io/address/0xF393D008077c97F2632FA04a910969aC58f88E3C" target="_blank" rel="noopener noreferrer">
