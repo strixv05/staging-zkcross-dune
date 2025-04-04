@@ -236,7 +236,7 @@ const blockchains = [
                 <li className="text-sm text-gray-400 flex justify-center">
                     <a
                         className="flex gap-2 items-center hover:text-gray-300 transition-all"
-                        href="https://lab.stellar.org/endpoints/liquidity-pools?$=network$id=testnet&label=Testnet&horizonUrl=https:////horizon-testnet.stellar.org&rpcUrl=https:////soroban-testnet.stellar.org&passphrase=Test%20SDF%20Network%20/;%20September%202015;;"
+                        href="https://lab.stellar.org/endpoints/liquidity-pools?$=network$id=mainnet&label=Mainnet&horizonUrl=https:////horizon.stellar.org&rpcUrl=&passphrase=Public%20Global%20Stellar%20Network%20/;%20September%202015;;"
                         target="_target"
                         rel="noopener noreferrer"
                     >
