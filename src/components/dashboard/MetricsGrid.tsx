@@ -35,8 +35,8 @@ const MetricsGrid = ({ statsData }: MetricsGridProps) => {
         },
         {
             title: "TVL",
-            value: statsData?.totalTvl ? `$${formatCommaStd(statsData?.totalTvl?.grandTotal)}` : "-- --- --- ---",
-            extraValue: statsData?.totalTvl,
+            value: statsData?.totalTvl ? `$${formatCommaStd(statsData?.totalTvl?.totalTvl)}` : "-- --- --- ---",
+            extraValue: statsData?.totalTvl?.platforms,
             subtitle: "Total TVL",
             lastUpdated: statsData?.date && statsData?.totalTvl ? getRelativeTime(statsData?.date) : "--",
             isLastActive: statsData?.totalTvl ? true : false,

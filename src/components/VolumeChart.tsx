@@ -8,17 +8,6 @@ import { CircleCheckBig } from "lucide-react";
 import ReactLoading from "react-loading";
 
 const VolumeChart = ({ label, data, date, hoverLabel, isPending }: { label: string; data: any[]; date: string; hoverLabel: string; isPending: boolean }) => {
-    // const data = [
-    //     { date: "Apr 2022", volume: 5 },
-    //     { date: "Apr 29 2022", volume: 5.5 },
-    //     { date: "May 6 2022", volume: 6 },
-    //     { date: "May 13 2022", volume: 6.2 },
-    //     { date: "May 20 2022", volume: 6.5 },
-    //     { date: "May 27 2022", volume: 6.8 },
-    //     { date: "Jun 3 2022", volume: 7 },
-    //     { date: "Jul 2022", volume: 8 },
-    //     { date: "Jul 29 2022", volume: 9 },
-    //     { date: "Aug 5 2022", volume: 9.5 },
 
     const formatYAxis = (value: number): string => {
         const formatter = new Intl.NumberFormat("en-US", {
