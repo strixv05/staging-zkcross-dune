@@ -24,7 +24,7 @@ const getExplorerUrl = (address: string, network: "ETH" | "BSC" | "POL" | "ARB" 
 const blockchains = [
     {
         name: "Hive zkCrossDEX",
-        logo: "https://cryptologos.cc/logos/hive-hive-logo.png?v=040",
+        logo: "https://assets.coingecko.com/coins/images/10840/standard/logo_transparent_4x.png?1696510797",
         content: (
             <ul className="flex flex-col gap-1">
                 <li className="text-sm text-gray-400 flex justify-center">
@@ -77,7 +77,7 @@ const blockchains = [
     },
     {
         name: "Tezos",
-        logo: "https://cryptologos.cc/logos/tezos-xtz-logo.png?v=040",
+        logo: "https://assets.coingecko.com/coins/images/976/standard/Tezos-logo.png?1696502091",
         content: (
             <ul className="flex flex-col gap-1">
                 <li className="text-sm text-gray-400 flex justify-center">
@@ -238,7 +238,7 @@ const blockchains = [
     },
     {
         name: "Stellar zkCrossDEX",
-        logo: "https://cryptologos.cc/logos/stellar-xlm-logo.png?v=040",
+        logo: "https://assets.coingecko.com/coins/images/100/standard/fmpFRHHQ_400x400.jpg?1735231350",
         isInvert: true,
         content: (
             <ul className="flex flex-col gap-1">
@@ -316,7 +316,7 @@ const blockchains = [
     },
     {
         name: "Arbitrum zkCrossDEX",
-        logo: "https://cryptologos.cc/logos/arbitrum-arb-logo.png?v=040",
+        logo: "https://assets.coingecko.com/coins/images/16547/standard/arb.jpg?1721358242",
         content: (
             <ul className="flex flex-col gap-1">
                 <li className="text-sm text-gray-400 flex justify-center">
