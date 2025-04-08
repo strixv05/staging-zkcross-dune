@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import VolumeChart from "../VolumeChart";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { baseUrl } from "@/app/page";
 
 interface GraphSectionProps {
     label: string;
@@ -18,7 +19,7 @@ const GraphSection = ({ label, apiEndpoint, dataMapping, hoverLabel, statsDate }
     const [timeframe, setTimeframe] = useState("3m");
     const { data, isPending, error } = useQuery({
         queryKey: [label, timeframe],
-        queryFn: () => fetch(`https://api.zkcross.network${apiEndpoint}?fromTimeframe=${timeframe}`).then((res) => res.json()),
+        queryFn: () => fetch(`${baseUrl}${apiEndpoint}?fromTimeframe=${timeframe}`, { headers: { "ngrok-skip-browser-warning": "true" } }).then((res) => res.json()),
         staleTime: 60 * 1000,
     });
 

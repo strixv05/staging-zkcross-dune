@@ -9,6 +9,8 @@ import GraphSection from "@/components/dashboard/GraphSection";
 import { formattedDateMonth } from "@/utils";
 import Ecosystem from "@/components/Ecosystem";
 
+export const baseUrl = "https://aa1c-2401-4900-8843-57cb-b213-67c4-11ba-940f.ngrok-free.app/api/v1"; //"https://api.zkcross.network/api/v1";
+
 const formateDateString = (i: any, tf: any) => {
     return formattedDateMonth(i?.month, i?.year, tf === "3m" ? i?.day : undefined, tf === "6m" ? `Wk${i?.weekOfMonth}` : undefined);
 };
@@ -17,12 +19,12 @@ const Dashboard = () => {
     // Fetch overall stats
     const { isPending, error, data } = useQuery({
         queryKey: ["stats"],
-        queryFn: () => fetch("https://api.zkcross.network/api/v1/stats/stats").then((res) => res.json()),
+        queryFn: () => fetch(`${baseUrl}/stats/stats`, { headers: { "ngrok-skip-browser-warning": "true" } }).then((res) => res.json()),
         staleTime: 60 * 1000,
     });
     const { isPending: isTvlPending, data: tvlData } = useQuery({
         queryKey: ["stats-tvl"],
-        queryFn: () => fetch("https://api.zkcross.network/api/v1/stats/tvls").then((res) => res.json()),
+        queryFn: () => fetch(`${baseUrl}/stats/tvls`, { headers: { "ngrok-skip-browser-warning": "true" } }).then((res) => res.json()),
         staleTime: 60 * 1000,
     });
 
@@ -43,9 +45,9 @@ const Dashboard = () => {
             <div className="mt-6 flex flex-col gap-6">
                 <GraphSection
                     label="Transactions"
-                    apiEndpoint="/api/v1/stats/transactions/graph"
+                    apiEndpoint="/stats/transactions/graph"
                     dataMapping={(i: any, tf: any) => ({
-                        volume: i?.cumulativeTxnCount,
+                        volume: i?.totalTxnCount,
                         date: formateDateString(i, tf),
                     })}
                     hoverLabel="Transactions"
@@ -53,9 +55,9 @@ const Dashboard = () => {
                 />
                 <GraphSection
                     label="Total Revenue"
-                    apiEndpoint="/api/v1/stats/revenue/graph"
+                    apiEndpoint="/stats/revenue/graph"
                     dataMapping={(i: any, tf: any) => ({
-                        volume: i?.cumulativeRevenue,
+                        volume: i?.totalRevenue,
                         date: formateDateString(i, tf),
                     })}
                     hoverLabel="Revenue"
@@ -63,9 +65,9 @@ const Dashboard = () => {
                 />
                 <GraphSection
                     label="Unique Active Wallets"
-                    apiEndpoint="/api/v1/stats/user/graph"
+                    apiEndpoint="/stats/user/graph"
                     dataMapping={(i: any, tf: any) => ({
-                        volume: i?.cumulativeUserCount,
+                        volume: i?.totalUserCount,
                         date: formateDateString(i, tf),
                     })}
                     hoverLabel="User Count"
@@ -73,9 +75,9 @@ const Dashboard = () => {
                 />
                 <GraphSection
                     label="Volume"
-                    apiEndpoint="/api/v1/stats/volume/graph"
+                    apiEndpoint="/stats/volume/graph"
                     dataMapping={(i: any, tf: any) => ({
-                        volume: i?.cumulativeVolume,
+                        volume: i?.totalVolume,
                         date: formateDateString(i, tf),
                     })}
                     hoverLabel="Volume"
