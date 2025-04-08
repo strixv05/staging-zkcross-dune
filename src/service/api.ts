@@ -1,5 +1,7 @@
 import axios from "axios";
 
+export const baseUrl = "https://api.zkcross.network/api/v1";
+
 const BK_ENDPOINT = "https://soon-market-place.onrender.com/api";
 
 export async function createNftApi({ name, description, imageUrl, createdBy, price, royalty, nftAddress }: { name: string; description: string; imageUrl: string; createdBy: string; price: number; royalty: number; nftAddress: string }) {

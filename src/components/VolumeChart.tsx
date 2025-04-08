@@ -8,7 +8,6 @@ import { CircleCheckBig } from "lucide-react";
 import ReactLoading from "react-loading";
 
 const VolumeChart = ({ label, data, date, hoverLabel, isPending }: { label: string; data: any[]; date: string; hoverLabel: string; isPending: boolean }) => {
-
     const formatYAxis = (value: number): string => {
         const formatter = new Intl.NumberFormat("en-US", {
             notation: "compact", // Enables compact formatting (e.g., K, M, B)
@@ -77,9 +76,10 @@ const VolumeChart = ({ label, data, date, hoverLabel, isPending }: { label: stri
             </CardContent>
             <CardFooter className="p-3">
                 <div className="flex items-center justify-between w-full text-xs text-gray-500">
-                    <Link href="https://zkcross.network/" rel="noopener noreferrer" target="_blank">
+                    <Link href="https://zkcross.network/" rel="noopener noreferrer" target="_blank" className="sm:block hidden">
                         @zkcross_network
                     </Link>
+                    <p>Cumulative Data Points Over Time</p>
                     <div className="flex items-center justify-center gap-1 bg-zinc-800 px-1.5 py-0.5 rounded-full">
                         <span className="text-[11px] text-gray-400">{date ? getRelativeTime(date) : "1d"}</span>
                         {/* <div className="w-2 h-2 rounded-full bg-green-600 -translate-y-[0.5px]"></div> */}

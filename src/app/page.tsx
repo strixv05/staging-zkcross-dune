@@ -8,8 +8,7 @@ import MetricsGrid from "@/components/dashboard/MetricsGrid";
 import GraphSection from "@/components/dashboard/GraphSection";
 import { formattedDateMonth } from "@/utils";
 import Ecosystem from "@/components/Ecosystem";
-
-const baseUrl = "https://aa1c-2401-4900-8843-57cb-b213-67c4-11ba-940f.ngrok-free.app/api/v1"; //"https://api.zkcross.network/api/v1";
+import { baseUrl } from "@/service/api";
 
 const formateDateString = (i: any, tf: any) => {
     return formattedDateMonth(i?.month, i?.year, tf === "3m" ? i?.day : undefined, tf === "6m" ? `Wk${i?.weekOfMonth}` : undefined);
