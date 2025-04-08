@@ -5,7 +5,8 @@ import React, { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import VolumeChart from "../VolumeChart";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { baseUrl } from "@/app/page";
+
+export const baseUrl = "https://aa1c-2401-4900-8843-57cb-b213-67c4-11ba-940f.ngrok-free.app/api/v1"; //"https://api.zkcross.network/api/v1";
 
 interface GraphSectionProps {
     label: string;
