@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Link from "next/link";
-import { Card } from "./ui/card";
+import { Card } from "../ui/card";
 import { CircleCheckBig } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { SpotLightItem } from "./ui/spotlight";
+import { SpotLightItem } from "../ui/spotlight";
 
 const MetricCard = ({ title, value, subtitle, lastUpdated = "4h", isLastActive = false }: { title: string; value: any; subtitle: string; lastUpdated?: string; isLastActive?: boolean; extraValue?: any }) => {
     if (title === "Grants") {

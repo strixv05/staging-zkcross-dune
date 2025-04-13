@@ -3,7 +3,7 @@ import Providers from "./providers";
 import { ReactNode } from "react";
 import { IBM_Plex_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
-import Header from "@/components/Header";
+import Header from "@/components/common/Header";
 
 const ibmFont = IBM_Plex_Sans({ weight: ["300", "400", "700", "600", "500"], subsets: ["latin"] });
 

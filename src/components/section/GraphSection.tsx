@@ -3,7 +3,7 @@
 
 import React, { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import VolumeChart from "../VolumeChart";
+import VolumeChart from "../common/VolumeChart";
 // import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { baseUrl } from "@/service/api";
 

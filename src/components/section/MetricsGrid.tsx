@@ -2,7 +2,7 @@
 "use client";
 
 import React from "react";
-import MetricCard from "../MetricCard";
+import MetricCard from "../common/MetricCard";
 import { formatCommaStd, getRelativeTime } from "@/utils";
 import { Spotlight } from "../ui/spotlight";
 

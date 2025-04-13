@@ -4,10 +4,10 @@
 import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import ReactLoading from "react-loading";
-import MetricsGrid from "@/components/dashboard/MetricsGrid";
-import GraphSection from "@/components/dashboard/GraphSection";
+import MetricsGrid from "@/components/section/MetricsGrid";
+import GraphSection from "@/components/section/GraphSection";
 import { formattedDateMonth } from "@/utils";
-import Ecosystem from "@/components/Ecosystem";
+import Ecosystem from "@/components/section/Ecosystem";
 import { baseUrl } from "@/service/api";
 
 const formateDateString = (i: any, tf: any) => {

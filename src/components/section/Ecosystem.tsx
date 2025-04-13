@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Card } from "./ui/card";
+import { Card } from "../ui/card";
 import { SquareArrowOutUpRight } from "lucide-react";
 
 const getExplorerUrl = (address: string, network: "ETH" | "BSC" | "POL" | "ARB" | "BASE" | "OP" | "AVA" | "PARTI" | "TEZO" | "STELLAR"): string => {
@@ -407,7 +407,7 @@ function Ecosystem() {
                             src={item?.logo}
                             alt={item?.name}
                             className={cn(
-                                "absolute pointer-events-none select-none z-0 bottom-[-20%] left-[-10%] w-44 h-44 opacity-15 filter blur group-hover:scale-125 group-hover:left-[0%] group-hover:bottom-[-10%] transition-all duration-300",
+                                "absolute pointer-events-none select-none z-0 bottom-[-20%] left-[-10%] w-44 h-44 opacity-15 filter delay-100 ease-in-out blur group-hover:scale-125 group-hover:left-[0%] group-hover:bottom-[-10%] transition-all duration-300",
                                 item?.isInvert && "filter invert"
                             )}
                         />
